@@ -1,25 +1,30 @@
 // src/App.jsx
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Journey from "./components/Journey";
 import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0f172a] text-white">
-
-      {/* TOP NAVBAR */}
+    <div className="min-h-screen overflow-x-hidden bg-[#0b1020] text-slate-300">
       <Navbar />
 
-      {/* MAIN CONTENT */}
-      <main className="pt-24 px-6 lg:px-16 space-y-32">
+      <main>
+        <Home />
         <About />
+        <Skills />
         <Projects />
-        <Contact />
+        <Journey />
         <Certifications />
+        <Contact />
       </main>
 
+      <Footer />
     </div>
   );
 }

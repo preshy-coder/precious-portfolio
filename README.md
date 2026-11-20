@@ -1,16 +1,121 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ✨ Precious Rhys Kihugwa — Portfolio
 
-Currently, two official plugins are available:
+**Full Stack Developer · Backend & API Developer · Cybersecurity Enthusiast**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, animated, fully responsive personal portfolio showcasing my projects, skills, education and experience.
 
-## React Compiler
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?logo=framer&logoColor=white)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 About
+
+I specialize in backend systems, APIs and full-stack architecture, and I'm studying a BSc in Cybersecurity and Digital Forensics at the Open University of Kenya. This portfolio is where I share what I've built and what I'm learning.
+
+## 🎨 Features
+
+- **Animated hero** with a typewriter effect, floating gradient orbs and an availability badge
+- **About section** with highlight cards for backend, full-stack and security work
+- **Skills** shown as animated proficiency bars plus grouped tech chips
+- **Filterable project gallery** (Systems, Commerce & Payments, Security & Real-time) with links to source code
+- **Journey timeline** covering education and internship experience
+- **Certifications** section that shows a "coming soon" state until a link is added
+- **Fully responsive**, with a mobile menu, active-section highlighting and a scroll-progress bar
+- **Glassmorphism dark theme** with a gradient accent palette
+- **Accessible**: keyboard focus styles, semantic HTML, ARIA labels and `prefers-reduced-motion` support
+
+## 🛠️ Tech stack
+
+| Area      | Tools                                  |
+| --------- | -------------------------------------- |
+| Framework | React 19                               |
+| Build     | Vite                                   |
+| Styling   | Tailwind CSS 3 + PostCSS               |
+| Animation | Framer Motion                          |
+| Quality   | ESLint (React Hooks + React Refresh)   |
+| Fonts     | Inter, Space Grotesk (Google Fonts)    |
+
+## 🚀 Getting started
+
+**Prerequisites:** Node.js 18+ and npm.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/preshy-coder/precious-portfolio.git
+cd precious-portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm run dev
+```
+
+Then open the local URL Vite prints (usually http://localhost:5173).
+
+### Available scripts
+
+| Command           | What it does                         |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the development server         |
+| `npm run build`   | Create an optimized production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint`    | Run ESLint on the project            |
+
+## ✏️ Customizing the content
+
+All of the text lives in one file, **`src/data.js`**, so you rarely need to touch the components:
+
+- `profile`: name, roles, tagline, email and GitHub link
+- `skillGroups` / `coreSkills`: the skills section
+- `projects`: add a project, set `repo` to its GitHub repository name (and `live` for a demo URL)
+- `timeline`: education and experience
+- `certifications`: set each `link` to the real certificate URL
+
+## 📁 Project structure
+
+```
+precious-portfolio/
+├── index.html              # Page shell, SEO meta tags, fonts
+├── tailwind.config.cjs     # Fonts, animations, keyframes
+├── src/
+│   ├── main.jsx            # App entry point
+│   ├── App.jsx             # Page layout (section order)
+│   ├── data.js             # All portfolio content
+│   ├── index.css           # Tailwind layers + custom utilities
+│   └── components/
+│       ├── Navbar.jsx      # Sticky nav, mobile menu, progress bar
+│       ├── Home.jsx        # Hero section
+│       ├── About.jsx
+│       ├── Skills.jsx
+│       ├── Projects.jsx    # Filterable project cards
+│       ├── Journey.jsx     # Education & experience timeline
+│       ├── Certifications.jsx
+│       ├── Contact.jsx
+│       ├── Footer.jsx
+│       ├── Typewriter.jsx  # Typing animation
+│       ├── Reveal.jsx      # Scroll-in animation wrapper
+│       ├── SectionHeading.jsx
+│       └── Icons.jsx       # Inline SVG icon set
+└── vite.config.js
+```
+
+## 📬 Contact
+
+- **Email:** [bgprecious544@gmail.com](mailto:bgprecious544@gmail.com)
+- **GitHub:** [@preshy-coder](https://github.com/preshy-coder)
+
+---
+
+<div align="center">
+
+Designed & built by **Precious Rhys Kihugwa**
+
+</div>

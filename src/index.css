@@ -2,11 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-[#0b1020] text-slate-300 antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: rgba(168, 85, 247, 0.45);
+    color: #fff;
+  }
+
+  /* Slim, themed scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b1020;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#a855f7, #3b82f6);
+    border-radius: 999px;
+    border: 2px solid #0b1020;
+  }
+
+  :focus-visible {
+    outline: 2px solid #c084fc;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
 }
 
-body {
-  @apply bg-[#0f172a] text-white;
-  font-family: 'Inter', sans-serif;
+@layer components {
+  /* Frosted-glass surface used by most cards */
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  /* Standard section wrapper */
+  .section {
+    @apply mx-auto w-full max-w-6xl px-6 py-24;
+  }
+
+  /* Soft grid in the page background, fading out towards the edges */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+}
+
+/* Respect people who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
