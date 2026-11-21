@@ -202,7 +202,7 @@ export const timeline = [
   },
   {
     type: "edu",
-    title: "Diploma in Software Engineering",
+    title: "Software Engineering",
     org: "Zetech University",
     period: "Completed 2025",
     points: ["Studied software engineering."],
