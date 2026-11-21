@@ -4,7 +4,7 @@ import Icon from "./Icons";
 import { profile } from "../data";
 
 const stats = [
-  { value: "10+", label: "Projects built" },
+  { value: "Many+", label: "Projects & counting" },
   { value: "6+", label: "Languages & frameworks" },
   { value: "3", label: "Databases" },
 ];

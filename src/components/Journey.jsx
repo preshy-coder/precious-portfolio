@@ -36,14 +36,16 @@ export default function Journey() {
                     )}
                   </div>
                   {item.org && <p className="mt-1 text-sm text-slate-400">{item.org}</p>}
-                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-400">
-                    {item.points.map((pt) => (
-                      <li key={pt} className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-400" />
-                        {pt}
-                      </li>
-                    ))}
-                  </ul>
+                  {item.points.length > 0 && (
+                    <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-400">
+                      {item.points.map((pt) => (
+                        <li key={pt} className="flex gap-3">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-400" />
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </li>
             </Reveal>

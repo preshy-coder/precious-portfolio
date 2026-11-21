@@ -13,7 +13,7 @@ export default function Projects() {
       <SectionHeading
         eyebrow="Projects"
         title="Things I've built"
-        subtitle="A selection of systems and applications — from civic platforms to payments."
+        subtitle="A selection of systems and applications, from civic platforms to payments. There are many more on my GitHub."
       />
 
       {/* Category filter */}
