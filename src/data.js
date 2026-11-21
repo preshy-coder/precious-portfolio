@@ -182,6 +182,13 @@ export const timeline = [
     ],
   },
   {
+    type: "edu",
+    title: "Pure Mathematics",
+    org: "The Open University",
+    period: "2025 – Present",
+    points: [],
+  },
+  {
     type: "work",
     title: "Software Development Internship",
     org: null,
@@ -196,11 +203,9 @@ export const timeline = [
   {
     type: "edu",
     title: "Diploma in Software Engineering",
-    org: "eTech University",
-    period: null,
-    points: [
-      "Built the foundation in software engineering, web development and databases.",
-    ],
+    org: "Zetech University",
+    period: "Completed 2025",
+    points: ["Studied software engineering."],
   },
 ];
 
