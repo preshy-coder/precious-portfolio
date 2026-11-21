@@ -17,7 +17,7 @@
 
 ##  About
 
-I'm a developer who specializes in backend systems, APIs and full-stack architecture. I'm studying a BSc in Cybersecurity and Digital Forensics, so security is part of everything I build.
+I'm a developer who specializes in backend systems, APIs and full-stack architecture. I'm studying a BSc in Cybersecurity and Digital Forensics, so security is part of everything I build.vohh and I also Love Mathematics!!
 
 This repository is the source code of my personal portfolio.
 
@@ -33,8 +33,5 @@ This repository is the source code of my personal portfolio.
 - **Certifications:** courses I've completed
 - **Contact:** the easiest way to reach me
 
-## 📬 Contact
 
-- **Portfolio:** [preshyrhys.netlify.app](https://preshyrhys.netlify.app/)
-- **Email:** [bgprecious544@gmail.com](mailto:bgprecious544@gmail.com)
-- **GitHub:** [@preshy-coder](https://github.com/preshy-coder)
+
