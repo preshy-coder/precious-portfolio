@@ -1,38 +1,43 @@
-
 import { useState, useEffect } from "react";
 
-export default function Typewriter({ texts, speed = 150, pause = 1500 }) {
+// Types out each string in `texts`, pauses, deletes it, then moves to the next.
+export default function Typewriter({ texts, speed = 90, pause = 1800 }) {
   const [text, setText] = useState("");
-  const [index, setIndex] = useState(0); 
+  const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    const current = texts[index % texts.length];
     let timeout;
 
-    const handleTyping = () => {
-      const currentText = texts[index % texts.length];
-      if (isDeleting) {
-        setText(currentText.substring(0, text.length - 1));
-      } else {
-        setText(currentText.substring(0, text.length + 1));
-      }
-
-      if (!isDeleting && text === currentText) {
-        timeout = setTimeout(() => setIsDeleting(true), pause);
-      } 
-     
-      else if (isDeleting && text === "") {
+    if (!isDeleting && text === current) {
+      timeout = setTimeout(() => setIsDeleting(true), pause);
+    } else if (isDeleting && text === "") {
+      timeout = setTimeout(() => {
         setIsDeleting(false);
         setIndex((prev) => prev + 1);
-      } else {
-        timeout = setTimeout(handleTyping, isDeleting ? speed / 2 : speed);
-      }
-    };
-
-    timeout = setTimeout(handleTyping, speed);
+      }, 0);
+    } else {
+      timeout = setTimeout(
+        () =>
+          setText(
+            isDeleting
+              ? current.substring(0, text.length - 1)
+              : current.substring(0, text.length + 1)
+          ),
+        isDeleting ? speed / 2 : speed
+      );
+    }
 
     return () => clearTimeout(timeout);
   }, [text, isDeleting, index, texts, speed, pause]);
 
-  return <span>{text}</span>;
+  return (
+    <span>
+      {text}
+      <span className="ml-0.5 inline-block w-[2px] animate-blink bg-purple-400 align-middle">
+        &nbsp;
+      </span>
+    </span>
+  );
 }

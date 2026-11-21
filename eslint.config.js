@@ -23,7 +23,8 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // `motion` is used as <motion.div />, which ESLint's core rule can't see
+      'no-unused-vars': ['error', { varsIgnorePattern: '^(motion|[A-Z_])' }],
     },
   },
 ])
