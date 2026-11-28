@@ -45,7 +45,10 @@ export const pillars = [
 
 // ── Skills ───────────────────────────────────────────────────
 export const coreSkills = [
-  { name: "Tailwind CSS", level: 95 },
+  { name: "Python", level: 98 },
+  { name: "Typescript", level: 96 },
+  { name: "Php", level: 98 },
+  { name: "Java", level: 70 },
   { name: "React", level: 90 },
   { name: "Node.js", level: 85 },
   { name: "PostgreSQL / MySQL", level: 80 },
@@ -56,12 +59,27 @@ export const skillGroups = [
   {
     title: "Frontend",
     icon: "layout",
-    items: ["React", "Next.js", "JavaScript", "Tailwind CSS", "HTML & CSS"],
+    items: ["React", "Next.js", "JavaScript", "Tailwind CSS", "HTML5 & CSS", "Bootsrap"],
   },
   {
-    title: "Backend & APIs",
-    icon: "server",
-    items: ["Node.js", "Express", "Python", "Django", "PHP", "REST APIs"],
+  title: "Backend & APIs",
+  icon: "server",
+  items: [
+    "Node.js",
+    "Express",
+    "NestJS",
+    "Python",
+    "Django",
+    "Flask",
+    "FastAPI",
+    "PHP",
+    "Laravel",
+    "REST APIs",
+    "GraphQL",
+    "WebSockets",
+    "JWT & OAuth",
+    "Postman",
+  ],
   },
   {
     title: "Databases",
